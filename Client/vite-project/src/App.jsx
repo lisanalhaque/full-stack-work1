@@ -26,7 +26,7 @@ const App = () => {
       
       const response = await axios.get("http://localhost:8000/auth/verify-token", {
         headers: {
-          Authorization: `Bearer ${token}`, // Include the token in the Authorization header
+          Authorization: `Bearer ${token}`,                         // Include the token in the Authorization header
         },
       });
       return window.alert(response.data.message + " Session expires in: " +
